@@ -88,7 +88,7 @@ max-width: 100%;
 }
 .sogbox {
 width:100%;
-max-width:700px;
+max-width:100%;
 background: rgb(255, 212, 131);
 display: flex;
 align-items: center;
@@ -97,7 +97,6 @@ padding: 10px 20px;
 }
 .sogbox input{
   background: transparent;
-  flex:1;
   border:0;
   outline:none;
   padding: 24px 20px;
@@ -130,22 +129,27 @@ padding: 10px 20px;
     flex-wrap: wrap;
     align-items: center;
   }
+  .card a{
+    text-decoration: none;
+    color: rgb(66, 10, 10);
+  }
   article.card {
     max-width: 100%;
     position:relative;
     margin-left:auto;
     align-items: center;
-  padding: 25px;
-    border: 2px solid rgb(255, 207, 207);
+    padding:5px;
+    padding-top: 5px;
+    border: 5px solid rgb(255, 207, 207);
     float: middle;
     width: 300px;
   }
   article.card:hover {
-    border: 2px solid rgb(255, 212, 131);
+    border: 5px solid rgb(255, 212, 131);
   }
   article.card img {
     max-width:100%;
-    height: auto;
+    height: fit-content;
   }
   p.content {
     text-align: center;
